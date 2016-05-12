@@ -318,6 +318,4 @@ DEFINES += STRIP_VOIP
 
 QMAKE_CXXFLAGS += -std=c++0x
 
-QMAKE_LFLAGS += -static-libgcc -static-libstdc++
-
 INCLUDEPATH += ../../core ../../external/rapidjson-master/include

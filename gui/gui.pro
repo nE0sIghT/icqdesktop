@@ -340,14 +340,14 @@ HEADERS  += \
 
 DEFINES += STRIP_VOIP
 QMAKE_CXXFLAGS += -std=c++0x
-QMAKE_LIBS += -lopenal -lavformat -lavcodec -lswresample -lavfilter -lavutil -lcorelib -lboost_system -lcurl_static -lssl_static -lcrypto_static -lboost_filesystem -lidn -lrtmp -lgcrypt -lgnutls -lgpg-error -ltasn1 -lz -lstdc++ -lrt -lxcb-util
+QMAKE_LIBS += -lopenal -lavformat -lavcodec -lswresample -lavfilter -lavutil -lcorelib -lboost_system -lcurl -lssl -lcrypto -lboost_filesystem -lidn -lrtmp -lgcrypt -lgnutls -lgpg-error -ltasn1 -lz -lstdc++ -lrt -lxcb-util
 CONFIG(32, 64|32) {
     QMAKE_LIBS += -lp11-kit
 }
 
 QMAKE_LIBS_THREAD = -lxcb-util -lffi -lpcre -lexpat -lXext -lXau -lXdmcp -lz -Wl,-Bdynamic -ldl -lpthread -lX11
 
-QMAKE_LFLAGS += -Wl,-Bstatic -static-libgcc -static-libstdc++ -L$$CORELIB_PATH
+QMAKE_LFLAGS += -L$$CORELIB_PATH
 
 CONFIG(64, 64|32) {
     QMAKE_LFLAGS += -L$${PWD}/../external/linux/x64 -L$${PWD}/../external/OpenAl/lib/linux/x64 -L$${PWD}/../external/ffmpeg/lib/linux/x64 -L/x64
