@@ -318,4 +318,6 @@ DEFINES += STRIP_VOIP
 
 QMAKE_CXXFLAGS += -std=c++0x
 
+QMAKE_LIBS += -lboost_filesystem
+
 INCLUDEPATH += ../../core ../../external/rapidjson-master/include
