@@ -4,7 +4,7 @@
 #include "../wim_packet.h"
 #include "../packets/send_imstat.h"
 #include "../../../utils.h"
-#include "../../../external/openssl/openssl/blowfish.h"
+#include "openssl/blowfish.h"
 #include "../../../core.h"
 
 namespace core

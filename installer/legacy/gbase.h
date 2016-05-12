@@ -2,7 +2,7 @@
 
 #define USE_NAMESPACES
 
-#include "../../external/gigabase_377/gigabase.h"
+#include "gigabase/gigabase.h"
 
 class CHttpCookiesList;
 class MAKFC_CContactInfo;

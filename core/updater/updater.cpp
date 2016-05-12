@@ -5,7 +5,7 @@
 #include "../async_task.h"
 #include "../http_request.h"
 #include "../../common.shared/version_info.h"
-#include "../../external/openssl/openssl/md5.h"
+#include "openssl/md5.h"
 
 namespace core
 {

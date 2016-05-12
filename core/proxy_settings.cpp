@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "proxy_settings.h"
-#include "../external/curl/include/curl.h"
+#include "curl/curl.h"
 #include "../corelib/collection_helper.h"
 
 namespace core

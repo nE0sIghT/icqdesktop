@@ -6,7 +6,7 @@
 #include "tools/strings.h"
 #include "tools/system.h"
 #include "tools/tlv.h"
-#include "../external/curl/include/curl.h"
+#include "curl/curl.h"
 #include "http_request.h"
 #include "tools/hmac_sha_base64.h"
 #include "async_task.h"

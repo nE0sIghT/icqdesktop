@@ -2,7 +2,7 @@
 #include "spam_report.h"
 
 #include "../../../http_request.h"
-#include "../../../../external/openssl/openssl/blowfish.h"
+#include "openssl/blowfish.h"
 
 using namespace core;
 using namespace wim;
