@@ -69,7 +69,7 @@ namespace core
         area_filename % _index % L"net" % L"txt";
 
         boost::filesystem::wpath path = _logs_directory;
-        path.append(area_filename.str());
+        path.append(area_filename.str(), boost::filesystem::path::codecvt());
 
         return path;
     }
@@ -112,7 +112,7 @@ namespace core
         for (auto iter = files.rbegin(); iter != files.rend(); ++iter)
         {
             boost::filesystem::wpath file_path = _logs_directory;
-            file_path.append(tools::from_utf8(iter->second));
+            file_path.append(tools::from_utf8(iter->second), boost::filesystem::path::codecvt());
 
             if (boost::filesystem::exists(file_path))
             {

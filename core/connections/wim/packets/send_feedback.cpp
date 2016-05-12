@@ -37,7 +37,7 @@ int32_t send_feedback::init_request(std::shared_ptr<core::http_request_simple> _
     auto fromCurr = boost::filesystem::wpath(g_core->get_network_log().file_names_history().second);
     if (boost::filesystem::exists(fromCurr))
     {
-        auto tempCurr = fromCurr.parent_path().append(L"feedback_log_current.tmp");
+        auto tempCurr = fromCurr.parent_path().append(L"feedback_log_current.tmp", boost::filesystem::path::codecvt());
         boost::filesystem::copy_file(fromCurr, tempCurr, boost::filesystem::copy_option::overwrite_if_exists);
         const long sizeCurr = boost::filesystem::file_size(tempCurr);
         {
@@ -61,7 +61,7 @@ int32_t send_feedback::init_request(std::shared_ptr<core::http_request_simple> _
         auto fromPrev = boost::filesystem::wpath(g_core->get_network_log().file_names_history().first);
         if (boost::filesystem::exists(fromPrev))
         {
-            auto tempPrev = fromPrev.parent_path().append(L"feedback_log_previous.tmp");
+            auto tempPrev = fromPrev.parent_path().append(L"feedback_log_previous.tmp", boost::filesystem::path::codecvt());
             boost::filesystem::copy_file(fromPrev, tempPrev, boost::filesystem::copy_option::overwrite_if_exists);
             const long sizePrev = boost::filesystem::file_size(tempPrev);
             {
@@ -79,7 +79,7 @@ int32_t send_feedback::init_request(std::shared_ptr<core::http_request_simple> _
         }
     }
 
-    log_ = fromCurr.parent_path().append("feedbacklog.txt").wstring();
+    log_ = fromCurr.parent_path().append("feedbacklog.txt", boost::filesystem::path::codecvt()).wstring();
 
     auto to = boost::filesystem::wpath(log_);
     if (boost::filesystem::exists(to))

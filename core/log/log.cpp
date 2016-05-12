@@ -410,7 +410,7 @@ namespace
         area_filename % log_file_index_ % w_area % log_files_ext_;
 
         fs::wpath path = logs_dir_;
-        path.append(area_filename.str());
+        path.append(area_filename.str(), boost::filesystem::path::codecvt());
 
         return path;
     }

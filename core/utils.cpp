@@ -84,7 +84,7 @@ namespace core
         {
             boost::filesystem::wpath logs_dir(get_product_data_path());
 
-            logs_dir.append(L"logs");
+            logs_dir.append(L"logs", boost::filesystem::path::codecvt());
 
             return logs_dir;
         }
