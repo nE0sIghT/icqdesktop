@@ -15,7 +15,7 @@ CONFIG += 64
 
 CONFIG += res_internal
 
-CORELIB_PATH = ../corelib
+CORELIB_PATH = ../corelib/corelib
 
 PRECOMPILED_HEADER = stdafx.h
 
