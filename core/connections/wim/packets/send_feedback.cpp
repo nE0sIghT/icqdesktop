@@ -4,7 +4,7 @@
 #include "../../../core.h"
 #include "../../../network_log.h"
 #include "../../../http_request.h"
-#include "../../../corelib/enumerations.h"
+#include "../../../../corelib/enumerations.h"
 #include "../../../tools/system.h"
 #include "../../../tools/strings.h"
 

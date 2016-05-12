@@ -2,7 +2,7 @@
 
 #include "stickers.h"
 
-#include "../../../corelib/enumerations.h"
+#include "../../corelib/enumerations.h"
 
 #include "../async_task.h"
 

@@ -2,7 +2,7 @@
 #include "send_message.h"
 
 #include "../../../http_request.h"
-#include "../../../corelib/enumerations.h"
+#include "../../../../corelib/enumerations.h"
 
 using namespace core;
 using namespace wim;

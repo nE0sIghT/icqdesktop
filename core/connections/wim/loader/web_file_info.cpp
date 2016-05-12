@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "web_file_info.h"
 
-#include "../../../corelib/collection_helper.h"
+#include "../../../../corelib/collection_helper.h"
 
 
 using namespace core;

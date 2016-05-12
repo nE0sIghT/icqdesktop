@@ -2,7 +2,7 @@
 #include "send_message_typing.h"
 
 #include "../../../http_request.h"
-#include "../../../corelib/enumerations.h"
+#include "../../../../corelib/enumerations.h"
 #include "../../../tools/system.h"
 
 using namespace core;
