@@ -121,6 +121,7 @@ SOURCES += \
     utils/application.cpp \
     utils/gui_coll_helper.cpp \
     utils/InterConnector.cpp \
+    utils/IntValidator.cpp \
     utils/launch.cpp \
     utils/local_peer.cpp \
     utils/PainterPath.cpp \
@@ -281,6 +282,7 @@ HEADERS  += \
     utils/application.h \
     utils/gui_coll_helper.h \
     utils/InterConnector.h \
+    utils/IntValidator.cpp \
     utils/launch.h \
     utils/local_peer.h \
     utils/mac_support.h \
